@@ -10,6 +10,44 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Font */
+  --text-base: 0.875rem;
+  --font-sans: var(--font-inter-sans);
+
+  /* Colors */
+  /* Primary */
+  --color-green-500: hsl(163, 72%, 41%);
+  --color-red-500: hsl(356, 69%, 56%);
+
+  --color-blue-600: hsl(208, 92%, 53%); /* Facebook */
+  --color-blue-500: hsl(203, 89%, 53%); /* Twitter */
+  --color-red-700: hsl(348, 97%, 39%); /* YouTube */
+
+  /* Linear gradient for instagram: */
+  --color-insta-from: hsl(37, 97%, 70%);
+  --color-insta-via: hsl(5, 77%, 71%);
+  --color-insta-to: (329, 70%, 58%);
+
+  /* Dark theme */
+  --color-toggle-dark-from: hsl(210, 79%, 56%);
+  --color-toggle-dark-to: hsl(146, 68%, 55%);
+
+  /* Light theme */
+  --color-gray-400: hsl(230, 22%, 74%); /* Toggle */
+
+  /* Neutral */
+  /* Dark Theme */
+  --color-gray-950: hsl(230, 17%, 14%); /* BG */
+  --color-gray-900: hsl(232, 19%, 15%); /* Top BG Pattern */
+  --color-navy-950: hsl(228, 28%, 20%); /* Card BG */
+  --color-gray-400: hsl(230, 22%, 74%); /* Text */
+
+  /* Light Theme */
+  --color-blue-50: hsl(225, 100%, 98%); /* Top BG Pattern */
+  --color-navy-50: hsl(227, 47%, 96%); /* Card BG */
+  --color-gray-650: hsl(228, 12%, 44%); /* Text */
+  --color-gray-950: hsl(230, 17%, 14%); /* Text */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +60,6 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
