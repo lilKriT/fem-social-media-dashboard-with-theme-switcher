@@ -5,14 +5,14 @@
 /* And this adds it via data attribute */
 /* @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *)); */
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+} */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+@theme {
+  /* --color-background: var(--background); */
+  /* --color-foreground: var(--foreground); */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
@@ -28,15 +28,6 @@
   --color-blue-600: hsl(208, 92%, 53%); /* Facebook */
   --color-blue-500: hsl(203, 89%, 53%); /* Twitter */
   --color-red-700: hsl(348, 97%, 39%); /* YouTube */
-
-  /* Linear gradient for instagram: */
-  --color-insta-from: hsl(37, 97%, 70%);
-  --color-insta-via: hsl(5, 77%, 71%);
-  --color-insta-to: (329, 70%, 58%);
-
-  /* Dark theme */
-  --color-toggle-dark-from: hsl(210, 79%, 56%);
-  --color-toggle-dark-to: hsl(146, 68%, 55%);
 
   /* Light theme */
   --color-gray-400: hsl(230, 22%, 74%); /* Toggle */
@@ -55,18 +46,54 @@
   --color-gray-950: hsl(230, 17%, 14%); /* Text */
 
   /* Semantic classes */
+  /* Linear gradient for instagram: */
+  --color-insta-from: hsl(37, 97%, 70%);
+  --color-insta-via: hsl(5, 77%, 71%);
+  --color-insta-to: (329, 70%, 58%);
+
+  --color-facebook: var(--color-blue-600);
+  --color-twitter: var(--color-blue-500);
+  --color-youtube: var(--color-red-700);
+
+  /* I know this is doubled - because dark has a gradient, it's easier this way */
+  --color-toggle-from: var(--color-gray-400);
+  --color-toggle-to: var(--color-gray-400);
+
+  --color-background: var(--color-blue-50);
+  --color-top-background: var(--color-navy-50);
+  --color-card-background: var(--color-white);
+
+  --color-text-one: var(--color-gray-650);
+  --color-text-two: var(--color-gray-950);
 }
 
-@media (prefers-color-scheme: dark) {
+@layer theme {
+  .dark {
+    --color-toggle-from: hsl(210, 79%, 56%);
+    --color-toggle-to: hsl(146, 68%, 55%);
+
+    --color-background: var(--color-gray-950);
+    --color-top-background: var(--color-gray-900);
+    --color-card-background: var(--color-navy-950);
+
+    --color-text-one: var(--color-gray-400);
+    --color-text-two: var(--color-gray-400);
+  }
+}
+
+/* This is only good if you want system preferred theme */
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-background); /* This works! */
+  /* color: var(--foreground); */
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   font-weight: 400;
+
+  /* @apply bg-background; */
 }
