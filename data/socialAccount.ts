@@ -19,7 +19,7 @@ export const socialAccounts: SocialAccount[] = [
     username: "@realnathanf",
     iconURL: "/icon-instagram.svg",
     topBarCSS: "",
-    count: 11000,
+    count: 11734,
     label: "Followers",
     changeToday: 1099,
   },
