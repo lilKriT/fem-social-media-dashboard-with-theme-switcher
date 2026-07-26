@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* This line supports dark mode via class */
+@custom-variant dark (&:where(.dark, .dark *));
+/* And this adds it via data attribute */
+/* @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *)); */
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -48,6 +53,8 @@
   --color-navy-50: hsl(227, 47%, 96%); /* Card BG */
   --color-gray-650: hsl(228, 12%, 44%); /* Text */
   --color-gray-950: hsl(230, 17%, 14%); /* Text */
+
+  /* Semantic classes */
 }
 
 @media (prefers-color-scheme: dark) {

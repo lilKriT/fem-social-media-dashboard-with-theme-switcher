@@ -1,12 +1,13 @@
-export type SocialAccount = {
-  iconURL: string;
+type SocialAccount = {
   username: string;
+  iconURL: string;
+  topBarCSS: string;
   count: number;
   label: "Followers" | "Subscribers";
   changeToday: number;
 };
 
-export type DailyMetric = {
+type DailyMetric = {
   label: string;
   iconURL: string;
   count: number;

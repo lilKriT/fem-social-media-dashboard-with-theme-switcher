@@ -1,6 +1,10 @@
+import DarkModeToggle from "./_components/DarkModeToggle";
+
 export default function Home() {
   return (
-    <div className="">
+    <div className="text-yellow-300 dark:text-blue-500">
+      <DarkModeToggle />
+
       <span>Social Media Dashboard</span>
       <span>Total Followers: 23,004</span>
 
