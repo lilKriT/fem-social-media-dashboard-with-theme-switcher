@@ -74,6 +74,10 @@
   }
 }
 
+* {
+  @apply outline outline-yellow-300;
+}
+
 body {
   background: var(--color-background); /* This works! */
   color: var(--color-text-primary);

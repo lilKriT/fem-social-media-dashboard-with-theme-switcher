@@ -8,19 +8,21 @@ export default function Home() {
   const followers = totalFollowers();
 
   return (
-    <section className="min-h-dvh">
-      <div className="flex flex-col justify-start items-center">
+    <section className="min-h-dvh flex justify-center items-start">
+      <div className="w-full max-w-4xl flex flex-col">
         {/* Top Row */}
-        <div>
+        <div className="flex justify-between">
           {/* Left */}
-          <div>
+          <div className="flex flex-col">
             <h1>Social Media Dashboard</h1>
-            <p>Total Followers:</p>
+            <p>Total Followers: {followers}</p>
           </div>
 
           {/* Right */}
           <DarkModeToggle />
         </div>
+
+        <p>bla bla</p>
       </div>
     </section>
   );

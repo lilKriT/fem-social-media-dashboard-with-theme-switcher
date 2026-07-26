@@ -1,11 +1,11 @@
 import { socialAccounts } from "@/data/socialAccount";
 
-const totalFollowers = () => {
+const totalFollowers = (): number => {
   const result = socialAccounts
     .map((v) => v.count)
     .reduce((sum, val) => sum + val);
 
-  console.log(result);
+  return result;
 };
 
 export default totalFollowers;
