@@ -56,8 +56,8 @@
   --color-top-background: var(--color-navy-50);
   --color-card-background: var(--color-white);
 
-  --color-text-primary: var(--color-gray-950);
-  --color-text-secondary: var(--color-gray-650);
+  --color-text-primary: var(--color-gray-650);
+  --color-text-secondary: var(--color-gray-950);
 }
 
 @layer theme {
@@ -70,12 +70,12 @@
     --color-card-background: var(--color-navy-950);
 
     --color-text-primary: var(--color-gray-400);
-    --color-text-secondary: var(--color-gray-400);
+    --color-text-secondary: var(--color-white);
   }
 }
 
 * {
-  @apply outline outline-yellow-300;
+  /* @apply outline outline-yellow-300; */
 }
 
 body {

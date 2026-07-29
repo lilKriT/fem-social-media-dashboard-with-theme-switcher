@@ -1,15 +1,15 @@
 import DarkModeToggle from "./_components/DarkModeToggle";
 
-import { dailyMetric } from "@/data/dailyMetric";
-import { socialAccounts } from "@/data/socialAccount";
 import totalFollowers from "./utils/totalFollowers";
+import SocialAccounts from "./_components/SocialAccounts";
+import DailyMetrics from "./_components/DailyMetrics";
 
 export default function Home() {
   const followers = totalFollowers();
 
   return (
     <section className="min-h-dvh flex justify-center items-start">
-      <div className="w-full max-w-4xl flex flex-col">
+      <div className="w-full max-w-6xl flex flex-col">
         {/* Top Row */}
         <div className="flex justify-between">
           {/* Left */}
@@ -22,7 +22,9 @@ export default function Home() {
           <DarkModeToggle />
         </div>
 
-        <p>bla bla</p>
+        <SocialAccounts />
+
+        <DailyMetrics />
       </div>
     </section>
   );
