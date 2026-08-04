@@ -1,4 +1,4 @@
-export const dailyMetric: DailyMetric[] = [
+export const dailyMetrics: DailyMetric[] = [
   {
     label: "Page Views",
     iconURL: "/icon-facebook.svg",

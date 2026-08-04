@@ -3,7 +3,7 @@ import SocialAccountCard from "./SocialAccountCard";
 
 const SocialAccounts = () => {
   return (
-    <div className="grid grid-cols-[repeat(auto-fit,minmax(12rem,1fr))] gap-8">
+    <div className="grid grid-cols-[repeat(auto-fit,minmax(14rem,1fr))] gap-8">
       {socialAccounts.map((socialAccount, idx) => (
         <SocialAccountCard key={idx} account={socialAccount} />
       ))}
