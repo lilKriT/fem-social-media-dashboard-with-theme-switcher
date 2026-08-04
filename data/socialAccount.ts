@@ -2,7 +2,7 @@ export const socialAccounts: SocialAccount[] = [
   {
     username: "@nathanf",
     iconURL: "/icon-facebook.svg",
-    topBarCSS: "",
+    topBarCSS: "bg-facebook",
     count: 1987,
     label: "Followers",
     changeToday: 12,
@@ -10,7 +10,7 @@ export const socialAccounts: SocialAccount[] = [
   {
     username: "@nathanf",
     iconURL: "/icon-twitter.svg",
-    topBarCSS: "",
+    topBarCSS: "bg-twitter",
     count: 1044,
     label: "Followers",
     changeToday: 99,
@@ -18,7 +18,7 @@ export const socialAccounts: SocialAccount[] = [
   {
     username: "@realnathanf",
     iconURL: "/icon-instagram.svg",
-    topBarCSS: "",
+    topBarCSS: "bg-linear-to-r from-insta-from via-insta-via to-insta-to",
     count: 11734,
     label: "Followers",
     changeToday: 1099,
@@ -26,7 +26,7 @@ export const socialAccounts: SocialAccount[] = [
   {
     username: "Nathan F.",
     iconURL: "/icon-youtube.svg",
-    topBarCSS: "",
+    topBarCSS: "bg-youtube",
     count: 8239,
     label: "Subscribers",
     changeToday: -144,

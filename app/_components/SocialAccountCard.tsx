@@ -8,7 +8,13 @@ const SocialAccountCard = ({
   account: SocialAccountCardProps;
 }) => {
   return (
-    <article className="bg-card-background rounded-md flex flex-col justify-center items-center">
+    <article
+      className={`bg-card-background rounded-md flex flex-col justify-center items-center overflow-hidden`}
+    >
+      {/* This is just the top bar */}
+      <div className={`h-1 w-full ${account.topBarCSS}`}></div>
+
+      {/* Actual content starts here */}
       <div className="flex justify-center items-center gap-2">
         <Image
           src={account.iconURL}
