@@ -3,8 +3,8 @@ import DailyMetricsCard from "./DailyMetricsCard";
 
 const DailyMetrics = () => {
   return (
-    <section className="flex flex-col gap-8">
-      <h1 className="text-[clamp(1.5rem,2vw,2.5rem)] text-text-secondary font-bold">
+    <section className="flex flex-col gap-8 mt-12">
+      <h1 className="text-[clamp(1.5rem,2vw,1.8rem)] text-text-secondary font-bold leading-none">
         Social Media Dashboard
       </h1>
 
