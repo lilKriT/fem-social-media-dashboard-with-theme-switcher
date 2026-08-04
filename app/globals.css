@@ -42,7 +42,7 @@
   /* Linear gradient for instagram: */
   --color-insta-from: hsl(37, 97%, 70%);
   --color-insta-via: hsl(5, 77%, 71%);
-  --color-insta-to: (329, 70%, 58%);
+  --color-insta-to: hsl(329, 70%, 58%);
 
   --color-facebook: var(--color-blue-600);
   --color-twitter: var(--color-blue-500);
