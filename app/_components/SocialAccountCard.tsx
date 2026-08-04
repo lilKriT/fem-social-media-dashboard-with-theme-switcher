@@ -9,12 +9,13 @@ const SocialAccountCard = ({
 }) => {
   return (
     <article
-      className={`bg-card-background rounded-md flex flex-col justify-center items-center overflow-hidden`}
+      className={`bg-card-background relative rounded-md flex flex-col justify-center items-center gap-4 overflow-hidden py-8`}
     >
       {/* This is just the top bar */}
-      <div className={`h-1 w-full ${account.topBarCSS}`}></div>
+      <div className={`h-1 w-full absolute top-0 ${account.topBarCSS}`}></div>
 
       {/* Actual content starts here */}
+      {/* Account name + icon */}
       <div className="flex justify-center items-center gap-2">
         <Image
           src={account.iconURL}
@@ -24,9 +25,19 @@ const SocialAccountCard = ({
         />
         <span>{account.username}</span>
       </div>
-      <span className="text-text-secondary">{account.count}</span>
-      <span>{account.label}</span>
-      <div className="flex justify-center items-center gap-1">
+
+      {/* Numbers */}
+      <div className="flex flex-col justify-center items-center gap-1">
+        <span className="text-text-secondary text-[clamp(1rem,6vw,3.5rem)] font-bold leading-none">
+          {account.count}
+        </span>
+        <span className="uppercase tracking-[.3rem] text-xs">
+          {account.label}
+        </span>
+      </div>
+
+      {/* Daily change */}
+      <div className="flex justify-center items-center gap-2">
         <Image
           src={account.changeToday > 0 ? "/icon-up.svg" : "/icon-down.svg"}
           alt={account.changeToday > 0 ? "Arrow up icon" : "Arrow down icon"}
