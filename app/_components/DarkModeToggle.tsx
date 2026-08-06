@@ -26,7 +26,7 @@ const DarkModeToggle = () => {
   };
 
   return (
-    <label className="flex items-center justify-center gap-2 text-sm font-bold cursor-pointer">
+    <label className="flex items-center justify-center gap-2 text-sm font-bold cursor-pointer text-text-primary">
       Dark Mode
       <div
         className="relative w-12 h-6 motion-safe:duration-150 rounded-full peer-checked:w-20
