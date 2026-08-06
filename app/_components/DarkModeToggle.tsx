@@ -26,14 +26,21 @@ const DarkModeToggle = () => {
   };
 
   return (
-    <label>
+    <label className="flex items-center justify-center gap-2 text-sm font-bold cursor-pointer">
       Dark Mode
-      <input
-        type="checkbox"
-        checked={theme === "dark"}
-        onChange={toggleMode}
-        autoComplete="off"
-      />
+      <div
+        className="relative w-12 h-6 motion-safe:duration-150 rounded-full peer-checked:w-20
+      bg-linear-to-r from-toggle-from to-toggle-to ease-in-out"
+      >
+        <input
+          type="checkbox"
+          checked={theme === "dark"}
+          onChange={toggleMode}
+          autoComplete="off"
+          className="sr-only peer"
+        />
+        <div className="absolute top-1 left-1 w-4 aspect-square rounded-full bg-top-background peer-checked:translate-x-6 motion-safe:duration-150 ease-in-out"></div>
+      </div>
     </label>
   );
 };
