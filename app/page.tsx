@@ -10,11 +10,11 @@ export default function Home() {
 
   return (
     <section className="min-h-dvh flex justify-center items-start">
-      <div className="w-full flex flex-col items-center py-12 sm:py-8">
+      <div className="w-full flex flex-col items-center p">
         {/* Top Row */}
         {/* Needed a bit of extra divs and css magic to make the double colored bg work */}
         <div className="w-full bg-top-background flex justify-center pb-34 rounded-b-3xl overflow-hidden px-4">
-          <div className="w-full max-w-6xl flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div className="w-full max-w-6xl flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 pt-12 sm:pt-8">
             {/* Left */}
             <div className="flex flex-col font-bold">
               <h1 className="text-[clamp(1.25rem,2vw,2.5rem)] text-text-secondary">
@@ -29,7 +29,7 @@ export default function Home() {
         </div>
 
         {/* Rest of content */}
-        <div className="w-full -mt-24 px-4 flex flex-col items-center">
+        <div className="w-full -mt-24 px-4 flex flex-col items-center pb-16">
           <div className="w-full max-w-6xl">
             <SocialAccounts />
 
