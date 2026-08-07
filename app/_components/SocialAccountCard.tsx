@@ -29,7 +29,7 @@ const SocialAccountCard = ({
 
       {/* Numbers */}
       <div className="flex flex-col justify-center items-center gap-1">
-        <span className="text-text-secondary text-[clamp(1rem,6vw,3.5rem)] font-bold leading-none">
+        <span className="text-text-secondary text-[clamp(3rem,6vw,3.5rem)] font-bold leading-none">
           {formatCompactNumbers(account.count)}
         </span>
         <span className="uppercase tracking-[.3rem] text-xs">

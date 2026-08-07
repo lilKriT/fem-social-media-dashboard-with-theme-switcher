@@ -8,7 +8,7 @@ const DailyMetrics = () => {
         Overview - Today
       </h1>
 
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(14rem,1fr))] gap-8">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(14rem,1fr))] gap-4 sm:gap-8">
         {dailyMetrics.map((dailyMetric, idx) => (
           <DailyMetricsCard key={idx} account={dailyMetric} />
         ))}

@@ -2,7 +2,11 @@
 
 import { useEffect, useState } from "react";
 
-const DarkModeToggle = () => {
+type DarkModeToggleProps = {
+  className?: string;
+};
+
+const DarkModeToggle = ({ className }: DarkModeToggleProps) => {
   const [theme, setTheme] = useState<"light" | "dark">("light");
 
   useEffect(() => {
@@ -26,11 +30,13 @@ const DarkModeToggle = () => {
   };
 
   return (
-    <label className="flex items-center justify-center gap-2 text-sm font-bold cursor-pointer text-text-primary">
+    <label
+      className={`flex items-center justify-center gap-2 text-sm font-bold cursor-pointer text-text-primary ${className}`}
+    >
       Dark Mode
       <div
         className="relative w-12 h-6 motion-safe:duration-150 rounded-full peer-checked:w-20
-      bg-linear-to-r from-toggle-from to-toggle-to ease-in-out"
+      bg-linear-to-r from-toggle-from to-toggle-to ease-in-out ml-auto"
       >
         <input
           type="checkbox"

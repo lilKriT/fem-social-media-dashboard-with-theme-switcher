@@ -19,7 +19,7 @@ const DailyMetricsCard = ({ account }: { account: DailyMetricsCardProps }) => {
 
       {/* Bottom Row */}
       <div className="flex justify-between items-center mt-6">
-        <span className="text-text-secondary text-[clamp(1rem,5vw,2.5rem)] leading-none">
+        <span className="text-text-secondary text-[clamp(1.75rem,5vw,2.5rem)] leading-none">
           {formatCompactNumbers(account.count)}
         </span>
         <span className="flex justify-center items-center gap-2 text-sm">

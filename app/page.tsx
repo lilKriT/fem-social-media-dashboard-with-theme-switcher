@@ -10,21 +10,21 @@ export default function Home() {
 
   return (
     <section className="min-h-dvh flex justify-center items-start">
-      <div className="w-full flex flex-col items-center">
+      <div className="w-full flex flex-col items-center py-12 sm:py-8">
         {/* Top Row */}
         {/* Needed a bit of extra divs and css magic to make the double colored bg work */}
-        <div className="w-full bg-top-background flex justify-center py-8 pb-34 rounded-b-3xl overflow-hidden px-4">
-          <div className="w-full max-w-6xl flex justify-between">
+        <div className="w-full bg-top-background flex justify-center pb-34 rounded-b-3xl overflow-hidden px-4">
+          <div className="w-full max-w-6xl flex flex-col sm:flex-row justify-between items-start gap-4">
             {/* Left */}
             <div className="flex flex-col font-bold">
-              <h1 className="text-[clamp(1.5rem,2vw,2.5rem)] text-text-secondary">
+              <h1 className="text-[clamp(1.25rem,2vw,2.5rem)] text-text-secondary">
                 Social Media Dashboard
               </h1>
               <p>Total Followers: {formatNumberWithCommas(followers)}</p>
             </div>
 
             {/* Right */}
-            <DarkModeToggle />
+            <DarkModeToggle className="w-full border-t border-text-primary pt-4" />
           </div>
         </div>
 
