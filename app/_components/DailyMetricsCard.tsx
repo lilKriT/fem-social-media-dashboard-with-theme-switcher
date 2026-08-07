@@ -1,3 +1,4 @@
+import formatCompactNumbers from "@/utils/formatCompactNumber";
 import Image from "next/image";
 
 type DailyMetricsCardProps = DailyMetric;
@@ -19,9 +20,9 @@ const DailyMetricsCard = ({ account }: { account: DailyMetricsCardProps }) => {
       {/* Bottom Row */}
       <div className="flex justify-between items-center mt-6">
         <span className="text-text-secondary text-[clamp(1rem,5vw,2.5rem)] leading-none">
-          {account.count}
+          {formatCompactNumbers(account.count)}
         </span>
-        <span className="flex justify-center items-center gap-2">
+        <span className="flex justify-center items-center gap-2 text-sm">
           <Image
             src={account.changeToday >= 0 ? "/icon-up.svg" : "/icon-down.svg"}
             alt={account.changeToday >= 0 ? "Arrow up icon" : "Arrow down icon"}
@@ -33,7 +34,7 @@ const DailyMetricsCard = ({ account }: { account: DailyMetricsCardProps }) => {
               account.changeToday >= 0 ? "text-green-500" : "text-red-500"
             }
           >
-            {account.changeToday}%
+            {Math.abs(account.changeToday)}%
           </span>
         </span>
       </div>

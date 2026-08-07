@@ -3,6 +3,7 @@ import DarkModeToggle from "./_components/DarkModeToggle";
 import totalFollowers from "./utils/totalFollowers";
 import SocialAccounts from "./_components/SocialAccounts";
 import DailyMetrics from "./_components/DailyMetrics";
+import formatNumberWithCommas from "@/utils/formatNumberWithCommas";
 
 export default function Home() {
   const followers = totalFollowers();
@@ -19,7 +20,7 @@ export default function Home() {
               <h1 className="text-[clamp(1.5rem,2vw,2.5rem)] text-text-secondary">
                 Social Media Dashboard
               </h1>
-              <p>Total Followers: {followers}</p>
+              <p>Total Followers: {formatNumberWithCommas(followers)}</p>
             </div>
 
             {/* Right */}

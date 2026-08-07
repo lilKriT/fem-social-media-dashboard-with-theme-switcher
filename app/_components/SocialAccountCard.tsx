@@ -1,3 +1,4 @@
+import formatCompactNumbers from "@/utils/formatCompactNumber";
 import Image from "next/image";
 
 type SocialAccountCardProps = SocialAccount;
@@ -29,7 +30,7 @@ const SocialAccountCard = ({
       {/* Numbers */}
       <div className="flex flex-col justify-center items-center gap-1">
         <span className="text-text-secondary text-[clamp(1rem,6vw,3.5rem)] font-bold leading-none">
-          {account.count}
+          {formatCompactNumbers(account.count)}
         </span>
         <span className="uppercase tracking-[.3rem] text-xs">
           {account.label}
@@ -37,7 +38,7 @@ const SocialAccountCard = ({
       </div>
 
       {/* Daily change */}
-      <div className="flex justify-center items-center gap-2">
+      <div className="flex justify-center items-center gap-2 font-bold text-sm">
         <Image
           src={account.changeToday > 0 ? "/icon-up.svg" : "/icon-down.svg"}
           alt={account.changeToday > 0 ? "Arrow up icon" : "Arrow down icon"}
