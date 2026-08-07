@@ -10,7 +10,7 @@ const SocialAccountCard = ({
 }) => {
   return (
     <article
-      className={`bg-card-background relative rounded-md flex flex-col justify-center items-center gap-4 overflow-hidden py-8`}
+      className={`bg-card-background hover:bg-card-background-hover motion-safe:duration-150 ease-in-out relative rounded-md flex flex-col justify-center items-center gap-4 overflow-hidden py-8`}
     >
       {/* This is just the top bar */}
       <div className={`h-1 w-full absolute top-0 ${account.topBarCSS}`}></div>

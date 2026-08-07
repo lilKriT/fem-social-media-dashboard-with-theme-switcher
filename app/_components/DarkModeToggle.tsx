@@ -36,7 +36,8 @@ const DarkModeToggle = ({ className }: DarkModeToggleProps) => {
       Dark Mode
       <div
         className="relative w-12 h-6 motion-safe:duration-150 rounded-full peer-checked:w-20
-      bg-linear-to-r from-toggle-from to-toggle-to ease-in-out ml-auto"
+      bg-linear-to-r from-toggle-from to-toggle-to ease-in-out ml-auto group overflow-hidden
+      before:absolute before:bg-linear-to-r before:from-toggle-from-hover before:to-toggle-to-hover before:inset-0 before:opacity-0 hover:before:opacity-100 motion-safe:before:duration-150  before:ease-in-out"
       >
         <input
           type="checkbox"
@@ -45,7 +46,7 @@ const DarkModeToggle = ({ className }: DarkModeToggleProps) => {
           autoComplete="off"
           className="sr-only peer"
         />
-        <div className="absolute top-1 left-1 w-4 aspect-square rounded-full bg-top-background peer-checked:translate-x-6 motion-safe:duration-150 ease-in-out"></div>
+        <div className="absolute top-1 left-1 w-4 aspect-square rounded-full bg-toggle-button group-hover:bg-toggle-button-hover peer-checked:translate-x-6 motion-safe:duration-150 ease-in-out"></div>
       </div>
     </label>
   );

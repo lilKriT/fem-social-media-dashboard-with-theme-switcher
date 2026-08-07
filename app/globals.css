@@ -51,6 +51,11 @@
   /* I know this is doubled - because dark has a gradient, it's easier this way */
   --color-toggle-from: var(--color-gray-400);
   --color-toggle-to: var(--color-gray-400);
+  --color-toggle-from-hover: var(--color-green-400);
+  --color-toggle-to-hover: var(--color-blue-400);
+
+  --color-toggle-button: var(--color-blue-50);
+  --color-toggle-button-hover: var(--color-blue-50);
 
   /* --color-background: var(--color-blue-50); */
   --color-background: var(--color-white);
@@ -58,6 +63,8 @@
   --color-top-background: var(--color-blue-50);
   /* --color-card-background: var(--color-white); */
   --color-card-background: var(--color-navy-50);
+
+  --color-card-background-hover: hsl(227, 47%, 86%);
 
   --color-text-primary: var(--color-gray-650);
   --color-text-secondary: var(--color-gray-950);
@@ -67,10 +74,17 @@
   .dark {
     --color-toggle-from: hsl(210, 79%, 56%);
     --color-toggle-to: hsl(146, 68%, 55%);
+    --color-toggle-from-hover: hsl(210, 79%, 56%);
+    --color-toggle-to-hover: hsl(146, 68%, 55%);
+
+    --color-toggle-button: hsl(232, 19%, 15%);
+    --color-toggle-button-hover: hsl(232, 19%, 25%);
 
     --color-background: var(--color-gray-950);
+
     --color-top-background: var(--color-gray-900);
     --color-card-background: var(--color-navy-950);
+    --color-card-background-hover: hsl(228, 28%, 30%);
 
     --color-text-primary: var(--color-gray-400);
     --color-text-secondary: var(--color-white);

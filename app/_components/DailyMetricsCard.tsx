@@ -5,7 +5,7 @@ type DailyMetricsCardProps = DailyMetric;
 
 const DailyMetricsCard = ({ account }: { account: DailyMetricsCardProps }) => {
   return (
-    <article className="bg-card-background rounded-md font-bold p-8">
+    <article className="bg-card-background hover:bg-card-background-hover rounded-md font-bold p-8 motion-safe:duration-150 ease-in-out">
       {/* Top Row */}
       <div className="flex justify-between items-center">
         <span>{account.label}</span>
