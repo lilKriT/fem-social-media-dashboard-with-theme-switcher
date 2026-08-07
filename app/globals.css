@@ -74,8 +74,8 @@
   .dark {
     --color-toggle-from: hsl(210, 79%, 56%);
     --color-toggle-to: hsl(146, 68%, 55%);
-    --color-toggle-from-hover: hsl(210, 79%, 56%);
-    --color-toggle-to-hover: hsl(146, 68%, 55%);
+    --color-toggle-from-hover: hsla(210, 79%, 56%, 0);
+    --color-toggle-to-hover: hsla(146, 68%, 55%, 0);
 
     --color-toggle-button: hsl(232, 19%, 15%);
     --color-toggle-button-hover: hsl(232, 19%, 25%);
