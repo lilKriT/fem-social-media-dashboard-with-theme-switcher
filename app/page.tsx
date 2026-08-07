@@ -14,7 +14,7 @@ export default function Home() {
         {/* Top Row */}
         {/* Needed a bit of extra divs and css magic to make the double colored bg work */}
         <div className="w-full bg-top-background flex justify-center pb-34 rounded-b-3xl overflow-hidden px-4">
-          <div className="w-full max-w-6xl flex flex-col sm:flex-row justify-between items-start gap-4">
+          <div className="w-full max-w-6xl flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             {/* Left */}
             <div className="flex flex-col font-bold">
               <h1 className="text-[clamp(1.25rem,2vw,2.5rem)] text-text-secondary">
@@ -24,7 +24,7 @@ export default function Home() {
             </div>
 
             {/* Right */}
-            <DarkModeToggle className="w-full border-t border-text-primary pt-4" />
+            <DarkModeToggle className="w-full sm:w-auto border-t border-text-primary sm:border-none pt-4 sm:pt-0" />
           </div>
         </div>
 
